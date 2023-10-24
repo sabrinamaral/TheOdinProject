@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.book p {
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.book .remove {
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.book .read {
+  background-color: transparent;
+  font-size: 1rem;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.book .read:hover {
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 850px;
+  margin-top: 28px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+form input {
+  margin-left: 20px;
+  border: #bbb solid 1px;
+  border-radius: 4px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+}
+
+form input[type="submit"] {
+  background-color: #05b505;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #04a304;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #05b505;
+}
+
+form input[type="text"]::placeholder {
+  color: #bbb;
+}
+
+form input[type="number"] {
+  width: 100%;
+  max-width: 100px;
+  padding: 0.5rem;
+}
+
+form input[type="number"]:focus {
+  outline: none;
+  border-color: #05b505;
+}
