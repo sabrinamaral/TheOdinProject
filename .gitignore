@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Node.js files
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
