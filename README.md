@@ -8,4 +8,4 @@ The Odin Project is an open-source curriculum for learning full-stack web develo
 
 This section lists the projects I have completed or are currently working on.
 
-- MyLibrary is a straightforward Vanilla JS project that displays a list of pre-filled sample books and provides a form to add new books. Additionally, it includes the functionalities to remove and read books.
+- MyLibrary is a straightforward Vanilla JS project that displays a list of pre-filled sample books and provides a form to add new books. Additionally, it includes the functionalities to remove and to mark a book as read.
