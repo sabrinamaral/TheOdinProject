@@ -11,9 +11,8 @@ const myBooks = myLibrary
           <p> ${book.title.toLowerCase()}</p>
           <p> by ${book.author.toLowerCase()}</p>
           <p> ${book.pages} pages</p>
-          <p> ${book.read ? "✅ read" : "⛔️ not yet"}</p>
         </div>
-        <button class="read">read</button>
+        <button class="btn-read">📖 not read</button>
       </div>`;
   })
   .join("");
@@ -49,5 +48,19 @@ document.querySelectorAll(".remove").forEach((removeBtn) => {
   removeBtn.addEventListener("click", (event) => {
     const book = event.target.parentElement.parentElement;
     books.removeChild(book);
+  });
+});
+
+// listening to the click event on the not_read btn
+// to toggle the class and the btn text for the books in the myLibrary array
+document.querySelectorAll(".btn-read").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    if (!btn.classList.contains("read")) {
+      btn.classList.add("read");
+      btn.textContent = "✅ read";
+    } else {
+      btn.classList.remove("read");
+      btn.textContent = "📖 not read";
+    }
   });
 });
